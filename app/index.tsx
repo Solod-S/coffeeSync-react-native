@@ -1,3 +1,4 @@
+import CustomIcon from "@/components/CustomIcon";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -9,7 +10,11 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={{ fontFamily: "Poppins-Black" }}>
+        Edit app/index.tsx to edit this screen.
+      </Text>
+      <CustomIcon name="search" size={22} />
+      <CustomIcon name="close" size={22} />
     </View>
   );
 }
